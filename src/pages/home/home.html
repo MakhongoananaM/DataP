@@ -1,0 +1,23 @@
+<ion-content padding class="pack">
+  <br><br>
+  <h1>Welcome to African Code Week</h1>
+  <br>
+  <img src="../../assets/imgs/3.jpg" contextmenu="welcome">
+  <br>
+  <br/>
+    <ion-list>
+
+        <ion-item class="t">
+          <ion-label floating>Name</ion-label>
+          <ion-input type="text" #name></ion-input>
+        </ion-item>
+      
+        <ion-item class="t">
+          <ion-label floating>Surname</ion-label>
+          <ion-input type="text" #surname></ion-input>
+        </ion-item>
+      
+      </ion-list>
+      <br><br><br/>
+      <button ion-button full  (click)="start(name.value,surname.value)" >Enter</button>
+</ion-content>
